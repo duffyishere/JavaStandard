@@ -1,0 +1,31 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0xa) at pc=0x0000000133072000, pid=12423, tid=24835
+#
+# JRE version: Java(TM) SE Runtime Environment (15.0.1+9) (build 15.0.1+9-18)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (15.0.1+9-18, mixed mode, sharing, tiered, compressed oops, g1 gc, bsd-amd64)
+# Problematic frame:
+# C  0x0000000133072000
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:+ShowCodeDetailsInExceptionMessages -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:62642 -javaagent:/Users/zzun_ho9/eclipse/jee-2020-122/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/398/0/.cp/lib/javaagent-shaded.jar -Dfile.encoding=UTF-8 chapter11_CollectionsFramework.HistoryTest01
+
+Host: MacBookPro17,1 x86_64 2400 MHz, 8 cores, 8G, Darwin 20.2.0
+Time: Sun Jan 17 22:21:43 2021 KST elapsed time: 1393.776526 seconds (0d 0h 23m 13s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fbecc0a0200):  JavaThread "Signal Dispatcher" daemon [_thread_in_vm, id=24835, stack(0x000000030cc97000,0x000000030cd97000)]
+
+Stack: [0x000000030cc97000,0x000000030cd97000],  sp=0x000000030cd95358,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  0x0000000133072000
+C  [libjimage.dylib+0x37a0]
